@@ -9,6 +9,10 @@ namespace EntityRelations.Models
 {
     public class Order
     {
+        public Order()
+        {
+            Items = new List<Item>();
+        }
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public Guid OrderID { get; set; }
@@ -24,5 +28,7 @@ namespace EntityRelations.Models
         public string Description { get; set; }
 
         public virtual Customer Customer { get; set; }
+
+        public ICollection<Item> Items { get; set; }
     }
 }

@@ -195,6 +195,14 @@
     <Compile Include="Migrations\201902191447351_AddItemsToDb.Designer.cs">
       <DependentUpon>201902191447351_AddItemsToDb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902191450420_AddACollectionOfOrdersToItem.cs" />
+    <Compile Include="Migrations\201902191450420_AddACollectionOfOrdersToItem.Designer.cs">
+      <DependentUpon>201902191450420_AddACollectionOfOrdersToItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902191453558_AddACollectionOfItemsToOrder.cs" />
+    <Compile Include="Migrations\201902191453558_AddACollectionOfItemsToOrder.Designer.cs">
+      <DependentUpon>201902191453558_AddACollectionOfItemsToOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -291,6 +299,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902191447351_AddItemsToDb.resx">
       <DependentUpon>201902191447351_AddItemsToDb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902191450420_AddACollectionOfOrdersToItem.resx">
+      <DependentUpon>201902191450420_AddACollectionOfOrdersToItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902191453558_AddACollectionOfItemsToOrder.resx">
+      <DependentUpon>201902191453558_AddACollectionOfItemsToOrder.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

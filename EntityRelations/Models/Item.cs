@@ -9,6 +9,10 @@ namespace EntityRelations.Models
 {
     public class Item
     {
+        public Item()
+        {
+            Orders = new List<Order>();
+        }
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public Guid ItemID { get; set; }
@@ -20,5 +24,7 @@ namespace EntityRelations.Models
         public int ReorderQuantity { get; set; }
 
         public decimal Price { get; set; }
+
+        public ICollection<Order> Orders { get; set; }
     }
 }
